@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Sharma | Software Engineer &amp; Full-Stack Developer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Gaurav Sharma - B.Tech CSE (2027), Full-Stack Web Developer, AI/ML enthusiast, and Code Katana 3.0 Winner. Skilled in C++, JavaScript, React, Node.js, Socket.io, and Machine Learning.">
+  <meta name="keywords" content="Gaurav Sharma, Software Engineer, B.Tech CSE, Full-Stack Developer, C++, JavaScript, React, Node.js, Socket.io, OpenCV, TensorFlow, Mohali, Portfolio">
+  <meta name="author" content="Gaurav Sharma">
+  <meta property="og:title" content="Gaurav Sharma | Software Engineer &amp; Developer Portfolio">
+  <meta property="og:description" content="Explore real-time systems, AI computer vision projects, competitive programming milestones, and credentials.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/gaurav-sharma.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Gaurav Sharma Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">GS</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#credentials" class="nav-link">Experience &amp; Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme (T)">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume CTA Link -->
+        <a href="#credentials" class="btn btn-sm btn-ghost hide-mobile">Resume</a>
+
+        <!-- Hamburger Menu Toggle Button (Mobile) -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-logo">&lt;GS /&gt;</span>
+        <button id="closeDrawerBtn" class="close-drawer-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-link"><span>01.</span> About Me</a></li>
+          <li><a href="#skills" class="mobile-link"><span>02.</span> Tech Stack Skills</a></li>
+          <li><a href="#projects" class="mobile-link"><span>03.</span> Key Projects</a></li>
+          <li><a href="#credentials" class="mobile-link"><span>04.</span> Resume &amp; Credentials</a></li>
+          <li><a href="#contact" class="mobile-link"><span>05.</span> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="resume.html" target="_blank" class="btn btn-primary btn-block">Download Resume (PDF)</a>
+        <div class="drawer-socials">
+          <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/gaurav_sharma" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <span>•</span>
+          <a href="mailto:gs2004.03.09@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Open for Software Engineering Internships &amp; SDE Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="hero-name">Gaurav Sharma</span>
+          </h1>
+
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">I engineer </span>
+            <span id="typewriter" class="typing-text"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-bio">
+            B.Tech CSE student (2027) with hands-on experience in full-stack web development, real-time bi-directional systems, and AI computer vision. Winner of <strong>Code Katana 3.0</strong> and active competitive programmer across LeetCode, GFG, and CodeChef.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <button type="button" class="btn btn-secondary" id="heroResumeBtn">
+              <span>View Resume</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </button>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/gaurav_sharma" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:gs2004.03.09@gmail.com" class="social-icon-btn" aria-label="Email Me" title="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="tel:+919870714267" class="social-icon-btn" aria-label="Call Me" title="Call: +91-9870714267">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+            <button type="button" class="social-icon-btn copy-email-btn" id="copyEmailHero" title="Copy Email Address" aria-label="Copy Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Visual Interactive Card (Right) -->
+        <div class="hero-visual">
+          <!-- Prominent Hero Photo Card -->
+          <div class="hero-profile-card">
+            <div class="hero-photo-wrap">
+              <img src="assets/gaurav-sharma.jpg" alt="Gaurav Sharma Photo" class="hero-photo" width="95" height="95">
+              <span class="hero-photo-badge">Code Katana 3.0 🏆</span>
+            </div>
+            <div class="hero-profile-details">
+              <h3 class="hero-card-name">Gaurav Sharma</h3>
+              <p class="hero-card-subtitle">B.Tech CSE (2027) • CGC Jhanjeri, Mohali</p>
+              <div class="hero-card-chips">
+                <span class="chip">CGPA: 8.22 / 10</span>
+                <span class="chip">PG-Tech Intern</span>
+                <span class="chip">C++ &amp; JS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">gaurav@portfolio: ~</span>
+              <span class="terminal-chip">bash</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat candidate_profile.json</span></div>
+              <pre class="terminal-json"><code>{
+  <span class="json-key">"name"</span>: <span class="json-str">"Gaurav Sharma"</span>,
+  <span class="json-key">"education"</span>: <span class="json-str">"B.Tech CSE (2023-2027) | CGC Jhanjeri"</span>,
+  <span class="json-key">"cgpa"</span>: <span class="json-str">"8.22 / 10.0"</span>,
+  <span class="json-key">"award"</span>: <span class="json-str">"1st Place - Code Katana 3.0"</span>,
+  <span class="json-key">"skills"</span>: [<span class="json-str">"C++"</span>, <span class="json-str">"JavaScript"</span>, <span class="json-str">"React"</span>, <span class="json-str">"Node.js"</span>, <span class="json-str">"Socket.io"</span>],
+  <span class="json-key">"status"</span>: <span class="json-str">"Available for SDE Roles"</span>
+}</code></pre>
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">node server.js --status</span></div>
+              <div class="terminal-output"><span class="status-badge success">● ONLINE</span> Socket.io bi-directional server running on port 5000</div>
+              <div class="terminal-line terminal-input-line">
+                <span class="prompt">$</span> <span class="terminal-blink-text">./view_credentials.sh</span>
+                <span class="terminal-caret"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION WITH USER PHOTO -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">01. Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging full-stack web engineering, real-time architectures, and machine learning systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Card with Gaurav Sharma's Real Photo -->
+          <div class="about-card profile-card">
+            <div class="avatar-container">
+              <img src="assets/gaurav-sharma.jpg" alt="Gaurav Sharma - Software Engineer" class="avatar-img" width="180" height="215">
+            </div>
+            <h3 class="about-name">Gaurav Sharma</h3>
+            <p class="about-role">Software Engineering Student (B.Tech CSE)</p>
+            <div class="about-location">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Mohali, Punjab, India</span>
+            </div>
+            <div class="about-badges">
+              <span class="badge badge-flagship">Code Katana 3.0 Winner</span>
+              <span class="badge">PG-Tech Intern Alumni</span>
+              <span class="badge">Competitive Coder</span>
+            </div>
+          </div>
+
+          <!-- Story & Narrative directly from resume -->
+          <div class="about-card narrative-card">
+            <h3 class="narrative-heading">Results-Driven Software Engineering Student</h3>
+            <p class="narrative-p">
+              I am a Computer Science and Engineering undergraduate (B.Tech CSE, 2027) at <strong>Chandigarh Group of Colleges, Jhanjeri</strong> with a current CGPA of <strong>8.22 / 10.0</strong>. I possess hands-on experience in full-stack web development, real-time communication systems, and AI-based applications.
+            </p>
+            <p class="narrative-p">
+              Proficient in <strong>C++, JavaScript (ES6+), React.js, Node.js, Express.js, Socket.io, MySQL, and MongoDB</strong>, I have a strong foundation in Data Structures and Algorithms with active competitive programming practice across LeetCode, GeeksforGeeks (GFG), and CodeChef. Recognized for winning the <strong>Code Katana 3.0</strong> coding competition.
+            </p>
+
+            <!-- Stats Highlights from Resume -->
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span class="stat-number">8.22</span>
+                <span class="stat-label">B.Tech CGPA / 10.0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">1st</span>
+                <span class="stat-label">Code Katana 3.0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">6 Wks</span>
+                <span class="stat-label">PG-Tech Intern</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Competitive Platforms</span>
+              </div>
+            </div>
+
+            <!-- Engineering Philosophy Points -->
+            <div class="philosophy-items">
+              <div class="philosophy-item">
+                <span class="phi-icon">⚡</span>
+                <div>
+                  <strong>Real-Time Systems &amp; Low Latency:</strong> Architecting bi-directional event streaming using Socket.io and Node.js with efficient MySQL state handling.
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <span class="phi-icon">🛡️</span>
+                <div>
+                  <strong>Computer Vision &amp; AI:</strong> Applying OpenCV, TensorFlow, and Scikit-Learn for high-accuracy threat detection and pattern recognition.
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <span class="phi-icon">🏆</span>
+                <div>
+                  <strong>Algorithmic Rigor:</strong> Robust problem solving rooted in Core DSA, OOP, OS, Computer Networks, and competitive programming.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS GRID SECTION -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">02. Capabilities</span>
+          <h2 class="section-title">Technical Skills &amp; Stack</h2>
+          <p class="section-subtitle">Verified programming languages, frameworks, databases, and computer science foundations.</p>
+        </div>
+
+        <!-- Filter Tabs for Skills -->
+        <div class="filter-tabs-container">
+          <div class="filter-tabs" role="tablist" aria-label="Skill Categories">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-tab" data-filter="languages" role="tab" aria-selected="false">Languages &amp; Core</button>
+            <button class="filter-tab" data-filter="frontend" role="tab" aria-selected="false">Front-End</button>
+            <button class="filter-tab" data-filter="backend" role="tab" aria-selected="false">Back-End &amp; DB</button>
+            <button class="filter-tab" data-filter="ai" role="tab" aria-selected="false">AI &amp; Computer Vision</button>
+            <button class="filter-tab" data-filter="tools" role="tab" aria-selected="false">Tools &amp; CS Fundamentals</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill: C++ -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <span class="skill-icon">⚡</span>
+              <span class="skill-badge">Core DSA</span>
+            </div>
+            <h3 class="skill-title">C++</h3>
+            <p class="skill-desc">Object-Oriented Programming, competitive coding on LeetCode/GFG, and memory management.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 92%;"></div></div>
+          </div>
+
+          <!-- Skill: JavaScript ES6+ -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <span class="skill-icon">💛</span>
+              <span class="skill-badge">Advanced</span>
+            </div>
+            <h3 class="skill-title">JavaScript (ES6+)</h3>
+            <p class="skill-desc">Asynchronous promises, closures, DOM manipulation, modular architecture, and event loops.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <span class="skill-icon">🐍</span>
+              <span class="skill-badge">Proficient</span>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">Machine Learning pipelines, Flask REST APIs, computer vision scripts, and data handling.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Skill: React.js -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <span class="skill-icon">⚛️</span>
+              <span class="skill-badge">Proficient</span>
+            </div>
+            <h3 class="skill-title">React.js</h3>
+            <p class="skill-desc">Component-driven architecture, custom hooks, state management, and modern SPA interfaces.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 86%;"></div></div>
+          </div>
+
+          <!-- Skill: HTML5 & CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <span class="skill-icon">🎨</span>
+              <span class="skill-badge">Advanced</span>
+            </div>
+            <h3 class="skill-title">HTML5, CSS3 &amp; Responsive UI</h3>
+            <p class="skill-desc">Flexbox, CSS Grid, mobile-first design, cross-device compatibility, and UI/UX wireframe conversion.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 94%;"></div></div>
+          </div>
+
+          <!-- Skill: Node.js & Express.js -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <span class="skill-icon">🟢</span>
+              <span class="skill-badge">Advanced</span>
+            </div>
+            <h3 class="skill-title">Node.js &amp; Express.js</h3>
+            <p class="skill-desc">RESTful API development, middleware, JSON parsing, error handling, and server logic.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Skill: Socket.io -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <span class="skill-icon">🔌</span>
+              <span class="skill-badge">Specialized</span>
+            </div>
+            <h3 class="skill-title">Socket.io (Real-Time)</h3>
+            <p class="skill-desc">Low-latency bi-directional event communication, concurrent connection management, and chat rooms.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Skill: MySQL -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <span class="skill-icon">🐬</span>
+              <span class="skill-badge">Proficient</span>
+            </div>
+            <h3 class="skill-title">MySQL Database</h3>
+            <p class="skill-desc">Relational schema design, normalization, complex joins, and persistent message storage.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- Skill: MongoDB -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <span class="skill-icon">🍃</span>
+              <span class="skill-badge">Proficient</span>
+            </div>
+            <h3 class="skill-title">MongoDB</h3>
+            <p class="skill-desc">NoSQL document modeling, indexing, aggregation pipelines, and flexible JSON document storage.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 82%;"></div></div>
+          </div>
+
+          <!-- Skill: Computer Vision (OpenCV & TensorFlow) -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <span class="skill-icon">👁️</span>
+              <span class="skill-badge">AI / Vision</span>
+            </div>
+            <h3 class="skill-title">OpenCV &amp; TensorFlow</h3>
+            <p class="skill-desc">Real-time image &amp; video analysis, object detection, bounding box annotation, and model inference.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- Skill: Machine Learning & Scikit-Learn -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <span class="skill-icon">🤖</span>
+              <span class="skill-badge">ML Models</span>
+            </div>
+            <h3 class="skill-title">Machine Learning (Scikit-Learn)</h3>
+            <p class="skill-desc">Classification models (Random Forest), threshold optimization, feature vectors, and data preprocessing.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 87%;"></div></div>
+          </div>
+
+          <!-- Skill: CS Fundamentals -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-icon">📚</span>
+              <span class="skill-badge">Foundations</span>
+            </div>
+            <h3 class="skill-title">Core CS Fundamentals</h3>
+            <p class="skill-desc">Data Structures &amp; Algorithms (DSA), OOP, Operating Systems (OS), DBMS, and Computer Networks.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Skill: Developer Tools -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-icon">🛠️</span>
+              <span class="skill-badge">Workflows</span>
+            </div>
+            <h3 class="skill-title">Git, GitHub &amp; VS Code</h3>
+            <p class="skill-desc">Version control, branch management, CI/CD deployment pipelines, and collaborative workflows.</p>
+            <div class="skill-meter"><div class="skill-level" style="width: 92%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">03. Portfolio</span>
+          <h2 class="section-title">Key Technical Projects</h2>
+          <p class="section-subtitle">Real-world production-grade applications across real-time sockets, computer vision AI, and web systems.</p>
+        </div>
+
+        <!-- Project Category Filter -->
+        <div class="filter-tabs-container">
+          <div class="filter-tabs" id="projectFilterTabs" role="tablist" aria-label="Project Categories">
+            <button class="filter-tab active" data-pfilter="all" role="tab" aria-selected="true">All Projects</button>
+            <button class="filter-tab" data-pfilter="realtime" role="tab" aria-selected="false">Real-Time &amp; Web</button>
+            <button class="filter-tab" data-pfilter="ai" role="tab" aria-selected="false">AI &amp; Computer Vision</button>
+            <button class="filter-tab" data-pfilter="security" role="tab" aria-selected="false">Cybersecurity &amp; ML</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- PROJECT 1: Real-Time Network Chat Application -->
+          <article class="project-card" data-category="realtime" data-id="chat-app">
+            <div class="project-img-wrapper">
+              <img src="assets/project-chat.svg" alt="Real-Time Network Chat Application Screenshot" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-flagship">★ Real-Time Sockets</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Socket.io</span>
+                <span class="ptag">MySQL</span>
+              </div>
+              <h3 class="project-title">Real-Time Network Chat Application</h3>
+              <p class="project-summary">
+                Multi-client chat system with low-latency bi-directional messaging using Socket.io and Node.js. Features a robust client-server architecture managing concurrent sockets with persistent MySQL message history.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="chat-app">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="btn btn-sm btn-outline" title="View Source on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: AI-Powered Weapon Detection System -->
+          <article class="project-card" data-category="ai" data-id="weapon-detector">
+            <div class="project-img-wrapper">
+              <img src="assets/project-weapon.svg" alt="AI Weapon Detection System Screenshot" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-popular">Computer Vision • AI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">Python</span>
+                <span class="ptag">OpenCV</span>
+                <span class="ptag">TensorFlow</span>
+                <span class="ptag">Deep Learning</span>
+              </div>
+              <h3 class="project-title">AI-Powered Weapon Detection System</h3>
+              <p class="project-summary">
+                Automated computer vision surveillance engine performing real-time image and video analysis. Leverages deep learning techniques with TensorFlow and OpenCV to detect weapons with high accuracy.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="weapon-detector">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Android Malware Detection System -->
+          <article class="project-card" data-category="security" data-id="malware-detector">
+            <div class="project-img-wrapper">
+              <img src="assets/project-malware.svg" alt="Malicious Mobile Application Detector Screenshot" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-featured">Cybersecurity • ML</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">Python</span>
+                <span class="ptag">Flask</span>
+                <span class="ptag">Scikit-Learn</span>
+                <span class="ptag">Random Forest</span>
+              </div>
+              <h3 class="project-title">Malicious Mobile App Detection System</h3>
+              <p class="project-summary">
+                Binary classification system predicting whether Android apps are Malicious or Benign based on permission vectors with 96.4% accuracy. Serves real-time inference via Flask API.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="malware-detector">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213/permission-base-malicious-mobile-application-detector" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Code Katana / AlgoLab -->
+          <article class="project-card" data-category="realtime" data-id="algolab">
+            <div class="project-img-wrapper">
+              <img src="assets/project-algo.svg" alt="AlgoLab Visualizer" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-interactive">Code Katana 3.0 Winner</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">C++</span>
+                <span class="ptag">DSA</span>
+                <span class="ptag">Canvas API</span>
+                <span class="ptag">Competitive</span>
+              </div>
+              <h3 class="project-title">AlgoLab • Algorithm &amp; DSA Studio</h3>
+              <p class="project-summary">
+                Interactive algorithmic simulation visualizing sorting routines, trees, and pathfinding. Inspired by winning 1st place in the Code Katana 3.0 coding competition.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="algolab">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: DevPulse Telemetry -->
+          <article class="project-card" data-category="realtime" data-id="devpulse">
+            <div class="project-img-wrapper">
+              <img src="assets/project-analytics.svg" alt="DevPulse Telemetry Dashboard" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-featured">Full-Stack SaaS</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">JavaScript ES6+</span>
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Express</span>
+                <span class="ptag">CSS Grid</span>
+              </div>
+              <h3 class="project-title">DevPulse • Cloud Telemetry &amp; Analytics</h3>
+              <p class="project-summary">
+                Responsive developer telemetry dashboard visualizing microservice latencies, error distributions, and uptime SLAs with customizable KPI widgets.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="devpulse">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: ZenMark Offline Notes -->
+          <article class="project-card" data-category="realtime" data-id="zenmark">
+            <div class="project-img-wrapper">
+              <img src="assets/project-cloudnotes.svg" alt="ZenMark Knowledge Base" class="project-img" loading="lazy">
+              <div class="project-badge-top">
+                <span class="badge badge-offline">Offline PWA</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="ptag">PWA</span>
+                <span class="ptag">IndexedDB</span>
+                <span class="ptag">Markdown</span>
+                <span class="ptag">Web Crypto</span>
+              </div>
+              <h3 class="project-title">ZenMark • Offline Markdown Knowledge Base</h3>
+              <p class="project-summary">
+                Minimalist, privacy-first developer notes workspace featuring client-side AES-256 encryption, live split markdown preview, and offline IndexedDB persistence.
+              </p>
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary open-modal-btn" data-project="zenmark">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS & RESUME SECTION -->
+    <section id="credentials" class="credentials-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">04. Experience &amp; Credentials</span>
+          <h2 class="section-title">Work Experience &amp; Education</h2>
+          <p class="section-subtitle">Formal internships, academic milestones, competitive coding honors, and verified certifications.</p>
+        </div>
+
+        <!-- Resume Action Banner -->
+        <div class="resume-cta-banner">
+          <div class="resume-cta-content">
+            <div class="resume-badge">📄 Official Curriculum Vitae</div>
+            <h3 class="resume-cta-title">Looking for Gaurav Sharma's complete resume?</h3>
+            <p class="resume-cta-desc">Download or preview the ATS-friendly PDF copy detailing my academic background (CGPA 8.22), PG-Tech internship, and certifications.</p>
+          </div>
+          <div class="resume-cta-buttons">
+            <a href="resume.html" target="_blank" class="btn btn-primary">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              <span>Open ATS Resume Page</span>
+            </a>
+            <button type="button" class="btn btn-secondary" id="previewResumeBtn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              <span>Quick Preview Modal</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Timeline Grid -->
+        <div class="timeline-container">
+          <!-- Column 1: Work Experience & Achievements -->
+          <div class="timeline-col">
+            <h3 class="timeline-heading">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <span>Work Experience &amp; Competitions</span>
+            </h3>
+
+            <div class="timeline-track">
+              <!-- Item 1: PG-Tech Internship -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">6 Weeks Internship</span>
+                  <span class="timeline-tag">Mohali, India</span>
+                </div>
+                <h4 class="timeline-role">Front-End Development Intern</h4>
+                <p class="timeline-org">Prerna Gati &amp; Technology (PG-Tech)</p>
+                <ul class="timeline-points">
+                  <li>Developed responsive web pages using HTML5, CSS3, and JavaScript, improving cross-device compatibility and user experience.</li>
+                  <li>Collaborated with senior developers to translate UI/UX wireframes into functional, pixel-perfect interfaces.</li>
+                  <li>Debugged and resolved front-end issues, reducing visual inconsistencies and improving page load performance.</li>
+                  <li>Completed a 6-week internship program and received an official certificate from PG-Tech Mohali.</li>
+                </ul>
+              </div>
+
+              <!-- Item 2: Code Katana & Competitive Coding -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">1st Place Winner</span>
+                  <span class="timeline-tag">GFG Collaboration</span>
+                </div>
+                <h4 class="timeline-role">Code Katana 3.0 Champion</h4>
+                <p class="timeline-org">Competitive Programming &amp; Hackathons</p>
+                <ul class="timeline-points">
+                  <li>Won 1st Place in Code Katana 3.0 coding contest organized by college in collaboration with GeeksforGeeks (GFG).</li>
+                  <li>Active competitive programmer on LeetCode, (GFG), and CodeChef; regularly participates in timed algorithm challenges.</li>
+                  <li>Participated in multiple national-level hackathons, demonstrating rapid prototyping, teamwork, and end-to-end solution development.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education & Certifications -->
+          <div class="timeline-col">
+            <h3 class="timeline-heading">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+              <span>Education &amp; Verified Certifications</span>
+            </h3>
+
+            <div class="timeline-track">
+              <!-- Item 1: B.Tech -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">2023 – 2027</span>
+                  <span class="timeline-tag">CGPA: 8.22 / 10.0</span>
+                </div>
+                <h4 class="timeline-role">Bachelor of Technology – Computer Science &amp; Engineering</h4>
+                <p class="timeline-org">Chandigarh Group of Colleges, Jhanjeri, Punjab, India</p>
+                <ul class="timeline-points">
+                  <li>Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Operating Systems, DBMS, Computer Networks.</li>
+                  <li>Academic excellence and active problem solver in college coding societies.</li>
+                </ul>
+              </div>
+
+              <!-- Item 2: Schooling -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">2019 – 2021</span>
+                  <span class="timeline-tag">Class XII: 73.2% | Class X: 80%</span>
+                </div>
+                <h4 class="timeline-role">Higher Secondary &amp; Secondary Certificates</h4>
+                <p class="timeline-org">The Sunbeam Senior Secondary School, Uttarakhand</p>
+                <ul class="timeline-points">
+                  <li>Class XII (Higher Secondary Certificate, 2021) — 73.2%</li>
+                  <li>Class X (Secondary School Certificate, 2019) — 80.0%</li>
+                </ul>
+              </div>
+
+              <!-- Item 3: Certifications -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">Verified Badges</span>
+                  <span class="timeline-tag">Credentials</span>
+                </div>
+                <h4 class="timeline-role">Official Certifications</h4>
+                <p class="timeline-org">Industry &amp; Academic Honors</p>
+                <ul class="timeline-points">
+                  <li><strong>Web Development Training:</strong> PG-Tech Mohali</li>
+                  <li><strong>AWS Academy Graduate:</strong> Generative AI Foundation</li>
+                  <li><strong>Problem Solving Certification:</strong> Code Chef</li>
+                  <li><strong>Full Stack Web Development:</strong> 30-Day Master Class Certificate</li>
+                  <li><strong>Certificate of Achievement:</strong> 1st Position, Code Katana 3.0 (GFG)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">05. Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">Feel free to reach out regarding internships, software engineering roles, hackathons, or project collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards (Left) -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <h4>Email Address</h4>
+                <a href="mailto:gs2004.03.09@gmail.com" class="contact-link">gs2004.03.09@gmail.com</a>
+                <button type="button" class="btn btn-xs btn-outline copy-email-btn" id="copyEmailContact">
+                  Copy to Clipboard
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <h4>Phone / WhatsApp</h4>
+                <a href="tel:+919870714267" class="contact-link">+91-9870714267</a>
+                <span class="contact-sub">Direct call or WhatsApp message</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <h4>Location</h4>
+                <span class="contact-link">Mohali, Punjab, India</span>
+                <span class="contact-sub">Chandigarh Group of Colleges (CGC Jhanjeri)</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">🐙</div>
+              <div class="contact-detail">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener" class="contact-link">github.com/gaurav-2213</a>
+                <span class="contact-sub">Explore source code &amp; repositories</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">💼</div>
+              <div class="contact-detail">
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/gaurav_sharma" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/gaurav_sharma</a>
+                <span class="contact-sub">Professional network &amp; recommendations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Right) -->
+          <div class="contact-form-col">
+            <div class="form-container">
+              <h3 class="form-title">Send Me a Message</h3>
+              <form id="contactForm" class="contact-form" novalidate>
+                <!-- Web3Forms Access Key (Free setup at https://web3forms.com to deliver emails to gs2004.03.09@gmail.com) -->
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName">Your Name <span class="required">*</span></label>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Recruiter / Collaborator" required>
+                    <span class="error-msg" id="nameError"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactEmail">Your Email <span class="required">*</span></label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="recruiter@company.com" required>
+                    <span class="error-msg" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject">Subject <span class="required">*</span></label>
+                  <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Software Engineering Internship / Full-Time Role" required>
+                  <span class="error-msg" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" rows="5" class="form-input" placeholder="Hi Gaurav, we reviewed your projects and would love to discuss an engineering role..." required></textarea>
+                  <span class="error-msg" id="messageError"></span>
+                </div>
+
+                <button type="submit" id="submitFormBtn" class="btn btn-primary btn-block">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="send-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  <span class="spinner" aria-hidden="true"></span>
+                </button>
+              </form>
+
+              <!-- Form Success State -->
+              <div id="formSuccess" class="form-success-card" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h4>Message Ready to Send!</h4>
+                <p>Thank you for reaching out! To ensure it reaches my inbox immediately, click the button below to launch in your email client or send via Gmail.</p>
+                <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+                  <a href="#" id="openMailAppBtn" class="btn btn-primary btn-sm" style="display: none;">Send from My Email App ✉️</a>
+                  <button type="button" id="resetFormBtn" class="btn btn-secondary btn-sm">Send Another Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">GS</span>
+          <span class="logo-slash">/</span>
+          <span class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-tagline">Gaurav Sharma • B.Tech CSE (2027) • Chandigarh Group of Colleges, Jhanjeri, Mohali, Punjab.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">© <span id="yearSpan">2026</span> Gaurav Sharma. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
+      <circle class="progress-ring-circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+      <circle id="scrollProgressCircle" class="progress-ring-circle" stroke="var(--primary)" stroke-width="3" stroke-dasharray="131.9" stroke-dashoffset="131.9" fill="transparent" r="21" cx="24" cy="24"/>
+    </svg>
+    <svg class="arrow-up" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+  </button>
+
+  <!-- INTERACTIVE PROJECT DETAIL MODAL -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close project modal">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE QUICK RESUME MODAL -->
+  <div id="resumeModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="resumeModalBackdrop"></div>
+    <div class="modal-dialog modal-lg">
+      <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close resume preview">&times;</button>
+      <div class="modal-body">
+        <div class="resume-modal-header">
+          <div>
+            <h3>Gaurav Sharma — Official Resume</h3>
+            <p>B.Tech CSE (2027) | CGC Jhanjeri | CGPA: 8.22</p>
+          </div>
+          <div class="resume-modal-actions">
+            <a href="resume.html" target="_blank" class="btn btn-primary btn-sm">Full Screen / Print PDF ↗</a>
+          </div>
+        </div>
+        <div class="resume-preview-container">
+          <iframe src="resume.html" title="Interactive Resume" class="resume-iframe"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMsg">Action successful</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

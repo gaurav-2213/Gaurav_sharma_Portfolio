@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurav Sharma - Software Engineer &amp; Full-Stack Developer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --text-subtle: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --accent: #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .resume-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.75rem 3.25rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid var(--border);
+    }
+
+    .no-print-bar {
+      max-width: 860px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+
+    /* Header with Photo */
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .header-photo-wrapper {
+      flex-shrink: 0;
+    }
+
+    .header-photo {
+      width: 105px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid var(--border);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .headline {
+      font-size: 1.05rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem 1.25rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .contact-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .contact-links a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      margin-bottom: 1.4rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .summary-text {
+      font-size: 0.92rem;
+      color: #334155;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .item {
+      margin-bottom: 1.1rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-role {
+      font-size: 0.98rem;
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      font-size: 0.88rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .item-meta {
+      font-size: 0.86rem;
+      color: var(--text-subtle);
+      margin-bottom: 0.35rem;
+    }
+
+    ul {
+      margin-left: 1.25rem;
+      font-size: 0.89rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.89rem;
+    }
+
+    .skill-line {
+      display: flex;
+      gap: 0.5rem;
+      line-height: 1.45;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+      min-width: 195px;
+      flex-shrink: 0;
+    }
+
+    .skill-val {
+      color: #334155;
+    }
+
+    .cert-list, .achieve-list {
+      margin-left: 1.25rem;
+      font-size: 0.89rem;
+      color: #334155;
+    }
+
+    .cert-list li, .achieve-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    .cert-list a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+      }
+      .no-print-bar {
+        display: none !important;
+      }
+      .resume-wrapper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (Hidden when printing to PDF) -->
+  <div class="no-print-bar">
+    <div>
+      <a href="index.html" class="btn btn-outline">← Back to Portfolio</a>
+    </div>
+    <div style="display: flex; gap: 0.75rem;">
+      <button onclick="window.print()" class="btn">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Save as PDF / Print
+      </button>
+    </div>
+  </div>
+
+  <div class="resume-wrapper">
+    <header>
+      <div class="header-info">
+        <h1>Gaurav Sharma</h1>
+        <div class="headline">Software Engineering Student (B.Tech CSE, 2027) | Full-Stack &amp; AI Developer</div>
+        <div class="contact-links">
+          <span>📍 Mohali, Punjab, India</span>
+          <a href="mailto:gs2004.03.09@gmail.com">✉️ gs2004.03.09@gmail.com</a>
+          <a href="tel:+919870714267">📞 +91-9870714267</a>
+          <a href="https://github.com/gaurav-2213" target="_blank" rel="noopener">🐙 github.com/gaurav-2213</a>
+          <a href="https://linkedin.com/in/gaurav_sharma" target="_blank" rel="noopener">💼 linkedin.com/in/gaurav_sharma</a>
+        </div>
+      </div>
+      <div class="header-photo-wrapper">
+        <img src="assets/gaurav-sharma.jpg" alt="Gaurav Sharma" class="header-photo">
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        Results-driven Software Engineering student (B. Tech CSE, 2027) with hands-on experience in full-stack web development, real-time systems, and AI-based applications. Proficient in C++, JavaScript, React.js, Node.js, MySQL, and MongoDB. Strong foundation in Data Structures and Algorithms with competitive programming experience on LeetCode, GFG, and Code Chef. Recognized for winning Code Katana 3.0 coding competition. Seeking a software development internship or entry-level role to contribute to scalable, production-grade applications.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bachelor of Technology – Computer Science and Engineering</span>
+          <span class="item-date">2023 – 2027</span>
+        </div>
+        <div class="item-meta">Chandigarh Group of Colleges, Jhanjeri, Punjab, India | <strong>CGPA: 8.22 / 10.0</strong></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Higher Secondary Certificate (Class XII)</span>
+          <span class="item-date">2021</span>
+        </div>
+        <div class="item-meta">The Sunbeam Senior Secondary School, Uttarakhand | <strong>Percentage: 73.2%</strong></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Secondary School Certificate (Class X)</span>
+          <span class="item-date">2019</span>
+        </div>
+        <div class="item-meta">The Sunbeam Senior Secondary School, Uttarakhand | <strong>Percentage: 80%</strong></div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-block">
+        <div class="skill-line">
+          <span class="skill-label">Programming Languages:</span>
+          <span class="skill-val">C++, JavaScript (ES6+), Python</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">Front-End Development:</span>
+          <span class="skill-val">HTML5, CSS3, React.js, Responsive Web Design</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">Back-End Development:</span>
+          <span class="skill-val">Node.js, Express.js, Socket.io, REST APIs</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">Databases:</span>
+          <span class="skill-val">MySQL, MongoDB</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">Artificial Intelligence / ML:</span>
+          <span class="skill-val">Machine Learning, Computer Vision, OpenCV, TensorFlow, Scikit-Learn</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">CS Fundamentals:</span>
+          <span class="skill-val">Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), Operating Systems (OS), Database Management Systems (DBMS), Computer Networks, Computer Organization &amp; Architecture</span>
+        </div>
+        <div class="skill-line">
+          <span class="skill-label">Developer Tools:</span>
+          <span class="skill-val">Git, GitHub, VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h2>Work Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Front-End Development Intern – Prerna Gati &amp; Technology (PG-Tech)</span>
+          <span class="item-date">Mohali, India | 6 Weeks</span>
+        </div>
+        <ul>
+          <li>Developed responsive web pages using HTML5, CSS3, and JavaScript, improving cross-device compatibility and user experience.</li>
+          <li>Collaborated with senior developers to translate UI/UX wireframes into functional, pixel-perfect interfaces.</li>
+          <li>Debugged and resolved front-end issues, reducing visual inconsistencies and improving page load performance.</li>
+          <li>Completed a 6-week internship program and received an official certificate from PG-Tech Mohali.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Key Technical Projects</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Real-Time Network Chat Application</span>
+          <span class="item-date">JavaScript, Node.js, Socket.io, MySQL</span>
+        </div>
+        <ul>
+          <li>Developed a real-time multi-client chat application using Socket.io and Node.js enabling low-latency bi-directional communication.</li>
+          <li>Designed a client-server architecture to manage concurrent socket connections and ensure reliable message delivery.</li>
+          <li>Integrated MySQL database for persistent message storage, supporting message history retrieval across sessions.</li>
+          <li>Optimized data packet handling and socket connection management to minimize network overhead.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">AI-Powered Weapon Detection System</span>
+          <span class="item-date">Python, OpenCV, TensorFlow, Machine Learning</span>
+        </div>
+        <ul>
+          <li>Designed and built an AI-based weapon detection system for real-time image and video analysis using computer vision.</li>
+          <li>Applied deep learning and machine learning techniques using TensorFlow and OpenCV to detect weapons with high accuracy.</li>
+          <li>Improved model performance through data preprocessing, data augmentation, and hyperparameter tuning.</li>
+          <li>Targeted security and surveillance use cases, making the system suitable for deployment in public spaces.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Permission-Based Malicious Mobile Application Detection System</span>
+          <span class="item-date">Python, Flask, Scikit-Learn, Random Forest</span>
+        </div>
+        <ul>
+          <li>Engineered an end-to-end Machine Learning web application predicting Android malware based on manifest permissions with 96.4% test accuracy.</li>
+          <li>Trained Random Forest classifier achieving high precision and cross-validated ROC-AUC; serialized model via `model.pkl`.</li>
+          <li>Built a high-performance Flask REST API backend with automated threshold scoring, health checks, and JSON endpoints.</li>
+          <li>Designed a sleek glassmorphic dashboard with real-time radar sweep animation and report export functionality.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements & Competitive Programming -->
+    <section>
+      <h2>Achievements &amp; Competitive Programming</h2>
+      <ul class="achieve-list">
+        <li><strong>1st Place – Code Katana 3.0:</strong> Won a competitive coding contest organized by college in collaboration with (GFG).</li>
+        <li><strong>Active Competitive Programmer:</strong> Active on LeetCode, (GFG), and CodeChef; regularly participates in timed algorithm challenges.</li>
+        <li><strong>National Hackathons:</strong> Participated in multiple national-level hackathons, demonstrating rapid prototyping, teamwork, and end-to-end solution development.</li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><strong>Web Development Training</strong> – PG-Tech Mohali</li>
+        <li><strong>AWS Academy Graduate</strong> – Generative AI Foundation</li>
+        <li><strong>Problem Solving Certification</strong> – Code Chef</li>
+        <li><strong>Full Stack Web Development</strong> – 30-Day Master Class Certificate</li>
+        <li><strong>Certificate of Achievement</strong> – 1st Position, Code Katana 3.0 (GFG)</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
